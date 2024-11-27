@@ -4,8 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #fruits-name{
+            color: black;
+            
+        }
+        .important-places{
+            color: brown;
+        }
+        .fruits-container li{
+            color:rgb(9, 88, 26)
+        }
+    </style>
 </head>
 <body>
-    <h1>hh</h1>
+   <header><h1>this is Header Tag</h1></header>
+   <main id="main-container">
+    <h1>My Dom Tree started</h1>
+    <ul>
+        <li>jalali</li>
+        <li>kababi</li>
+        <li>Rupali</li>
+        <li>PuBali</li>
+    </ul>
+
+    <section class="fruits-container" id="fruits-container">
+        <h1 id="fruits-name">name of fruits:</h1>
+       <ul>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Kola</li>
+        <li>Mango</li>
+       </ul>
+
+    </section>
+    <section  id="place-name" class="place-total">
+        <h1 id="place-title"  >Place I Like to visit:</h1>
+        <ul>
+            <li class="important-place1">Bandarban</li>
+            <li class="important-places">Sundarban</li>
+            <li class="important-places">Badaban</li>
+            
+            <li class="">Cent Martin</li>
+        </ul>
+    </section>
+    <section>
+        <h1 id="city" class="bari" >My favorite Cities</h1>
+        <ul id="" class=" im-1 im-2 im-3">
+            <li class="im-1">Bogura</li>
+            <li class="im-2">Dhaka</li>
+            <li class="im-3">Rajshahi</li>
+            <li class="im-4">Nator</li>
+        </ul>
+    </section>
+   </main>
+   <script src="./append.js">
+    </script>
+    <script src="dom.js"></script>
+    <script> 
+    // const liCollection=document.getElementsByTagName("li")
+    // // console.log(liCollection);
+    // for(const li of liCollection){
+    //     console.log(li.innerText);
+    // }
+    // const alHeadingThag=document.getElementsByTagName('h1')
+   
+    // for(const h1 of alHeadingThag){
+    //     console.log(h1.innerText);
+    // }
+    const places=document.getElementsByClassName("important-places")
+    for(const place of places){
+
+        // console.log(place.innerText);
+
+    }
+    const fruits_title=document.getElementById("fruits-name")
+    fruits_title.innerText='change-fruits title'
+
+    const someLi=document.querySelectorAll('.fruits-container li')
+    for(const li of someLi ){
+
+        // console.log(li.innerText);
+    }
+    </script>
+
+    
+    
+ 
 </body>
 </html>
